@@ -1,0 +1,30 @@
+{
+  "name": "dsc-mbot-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "dev": "cp ./process.env ./dist/process.env && concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "tsc && node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/voice": "^0.13.0",
+    "discord.js": "^14.4.0",
+    "dotenv": "^16.0.2",
+    "ffmpeg-static": "^5.1.0",
+    "nanoid": "^3.0.0",
+    "play-dl": "^1.9.5",
+    "sodium-native": "^3.4.1",
+    "usetube": "git@github.com:janrudowski/usetube.git"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.20",
+    "@types/usetube": "^2.1.0",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  }
+}
