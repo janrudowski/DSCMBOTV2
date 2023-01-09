@@ -6,7 +6,6 @@ import {
   skipHandler,
   pauseHandler,
   loopHandler,
-  mangoHandler,
   shuffleHandler,
   stopHandler,
 } from "./handlers";
@@ -41,8 +40,7 @@ const commandsList: CommandParams[] = [
         actions: playHandler,
       },
     ]
-  ),
-  { name: "mango", actions: mangoHandler },
+  )
 ].flat();
 
 //todo: seperate the player etc logic from sending messages. provide 2 methods to actions example: actions: [playSong, sendMessage]

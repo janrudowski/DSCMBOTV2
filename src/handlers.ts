@@ -66,10 +66,6 @@ export const shuffleHandler: Handler<void> = (
   interaction.send(isShuffled ? "🔀 Shuffled!" : "▶ Unshuffled!");
 };
 
-export const mangoHandler: Handler<void> = (_, __, interaction): void => {
-  interaction.send("DZIAB 🦜");
-};
-
 // export const testHandler: Handler<void> = async (
 //   params,
 //   channel,
