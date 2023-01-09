@@ -13,13 +13,13 @@ import {
   PlayerSubscription,
 } from "@discordjs/voice";
 
-import Interaction from "./interaction";
+import Interaction from "../interaction/interaction";
 
 import * as playDL from "play-dl";
 
 //TODO: PODMIEN SWOJA METODE
 import { Queue } from "./queue";
-import formatTime from "./utils/formatTime";
+import formatTime from "../utils/formatTime";
 
 export class Player extends Queue {
   private connection: VoiceConnection | undefined = undefined;

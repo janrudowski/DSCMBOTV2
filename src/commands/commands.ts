@@ -6,9 +6,9 @@ import {
   Argument,
   CommandParams,
   CommandRules,
-} from "./../types/types";
-import Interaction from "./interaction";
-import { Handler } from "./../types/types";
+} from "../../types/types";
+import Interaction from "../interaction/interaction";
+import { Handler } from "../../types/types";
 
 export class Command {
   private description: string;

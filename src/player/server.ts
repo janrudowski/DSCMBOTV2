@@ -1,5 +1,5 @@
-import { Command } from "./commands";
-import { IServer, Params, ParamTypes, Argument } from "../types/types";
+import { Command } from "../commands/commands";
+import { IServer, Params, ParamTypes, Argument } from "../../types/types";
 export default class Server implements IServer {
   constructor(
     private readonly commandPrefix: string,

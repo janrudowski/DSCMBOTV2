@@ -1,5 +1,5 @@
 import { Argument } from "./types/types";
-import { config } from "./src/config";
+import { config } from "./src/config/config";
 import {
   Client,
   GatewayIntentBits,
@@ -7,9 +7,9 @@ import {
   TextChannel,
   VoiceChannel,
 } from "discord.js";
-import Server from "./src/server";
-import { commands } from "./src/commands";
-import Interaction from "./src/interaction";
+import Server from "./src/player/server";
+import { commands } from "./src/commands/commands";
+import Interaction from "./src/interaction/interaction";
 
 const client = new Client({
   intents: [

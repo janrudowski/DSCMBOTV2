@@ -1,4 +1,4 @@
-import { CommandParams, CommandRules, ParamTypes } from "./../types/types";
+import { CommandParams, CommandRules, ParamTypes } from "../../types/types";
 import CommandMiddleware from "./commandMiddleware";
 
 import {
@@ -40,7 +40,7 @@ const commandsList: CommandParams[] = [
         actions: playHandler,
       },
     ]
-  )
+  ),
 ].flat();
 
 //todo: seperate the player etc logic from sending messages. provide 2 methods to actions example: actions: [playSong, sendMessage]

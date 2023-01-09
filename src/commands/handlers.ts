@@ -4,9 +4,9 @@ import {
   ActionRowBuilder,
   EmbedBuilder,
 } from "discord.js";
-import { Player } from "./player";
-import { Handler } from "../types/types";
-import Song from "./song";
+import { Player } from "../player/player";
+import { Handler } from "../../types/types";
+import Song from "../player/song";
 
 export const player = new Player();
 

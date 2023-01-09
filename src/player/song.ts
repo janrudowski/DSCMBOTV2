@@ -1,6 +1,6 @@
-import { Argument, ParamTypes } from "../types/types";
+import { Argument, ParamTypes } from "../../types/types";
 import * as usetube from "usetube";
-import getId from "./utils/getId";
+import getId from "../utils/getId";
 
 export default class Song {
   public readonly id: string = getId();

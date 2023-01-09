@@ -1,5 +1,5 @@
-import { Command } from "./../src/commands";
-import Interaction from "../src/interaction";
+import { Command } from "../src/commands/commands";
+import Interaction from "../src/interaction/interaction";
 import {
   DMChannel,
   PartialDMChannel,

@@ -1,5 +1,5 @@
-import { CommandRules } from "../types/types";
-import { CommandParams } from "../types/types";
+import { CommandRules } from "../../types/types";
+import { CommandParams } from "../../types/types";
 
 export default class CommandMiddleware {
   constructor() {}
