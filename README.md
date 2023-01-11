@@ -61,4 +61,45 @@ export const config: Config = {
 !stop
 ```
 
+## Documentation
 
+### Additional commands
+
+You can add new commands simply by expanding the ```commandsList``` array in the  ```commandsList.ts``` file.
+
+_Default file_
+
+```ts
+const commandsList: CommandParams[] = [
+  CommandMiddleware.group(
+    [
+      CommandRules.voice_same_as_player_required,
+      CommandRules.voice_required,
+      CommandRules.player_required,
+    ],
+    [
+      { name: "skip", actions: skipHandler },
+      { name: "pause", actions: pauseHandler },
+      { name: "loop", actions: loopHandler },
+      { name: "shuffle", actions: shuffleHandler },
+      { name: "stop", actions: stopHandler },
+    ]
+  ),
+  CommandMiddleware.group(
+    [CommandRules.voice_required],
+    [
+      {
+        name: "play",
+        expectedParams: [
+          [
+            ParamTypes.youtube_playlist,
+            ParamTypes.youtube_song,
+            ParamTypes.string,
+          ],
+        ],
+        actions: playHandler,
+      },
+    ]
+  ),
+].flat();
+```
