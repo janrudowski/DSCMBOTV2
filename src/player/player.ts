@@ -131,8 +131,7 @@ export class Player extends Queue {
       return;
     }
     const currentPlaying = this.getCurrent();
-    if (!currentPlaying) return;
-    if (!this.isLoop) this.remove(currentPlaying.id);
+    if (!this.isLoop && currentPlaying) this.remove(currentPlaying.id);
     this.playSong(this.channel!, this.interaction!);
   }
 
